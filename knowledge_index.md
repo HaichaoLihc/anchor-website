@@ -2,6 +2,9 @@
 
 ## Observations
 
+- 2026-06-05 GitHub Pages live check showed `/index.html`, `/styles.css`, and `/app-icon.png` all serving 200 with the correct MIME types. Added `?v=20260605` stylesheet cache-busting query to `index.html`, `privacy.html`, and `support.html` because browsers/CDN edges can temporarily show an unstyled page after seeing a stale or missing stylesheet during deploy.
+    - importance: green
+    - review_state: informed
 - 2026-06-04 rebuilt the public homepage into a fuller static marketing page matching the macOS app's minimal native style: warm off-white canvas, system typography, green/deep-green AnchorTheme accents, pill CTAs, real app icon asset, and a CSS-rendered focus-session preview with proctor-eye motif.
     - importance: green
     - review_state: informed
