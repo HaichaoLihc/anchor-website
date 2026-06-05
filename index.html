@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anchor</title>
   <meta name="description" content="Anchor is a local-first AI focus companion for macOS.">
-  <link rel="stylesheet" href="styles.css?v=20260605">
+  <link rel="stylesheet" href="styles.css?v=20260605-4">
 </head>
 <body>
   <header class="site-header">
@@ -14,7 +14,7 @@
       <span>Anchor</span>
     </a>
     <nav class="nav-links" aria-label="Site links">
-      <a href="#features">Features</a>
+      <a href="#flow">Flow</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
     </nav>
@@ -23,88 +23,112 @@
   <main class="site">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">AI focus companion for macOS</p>
+        <p class="eyebrow">Local-first focus for macOS</p>
         <h1 id="hero-title">Anchor</h1>
-        <p class="headline">Stay with the work you meant to do.</p>
-        <p class="lede">Start a timed focus session, choose a proctor style, and let Anchor quietly check whether your screen still matches your goal.</p>
-        <div class="actions" aria-label="Primary links">
-          <a class="button primary" href="support.html">Get support</a>
-          <a class="button secondary" href="privacy.html">Read privacy policy</a>
+        <p class="headline">A quiet companion for staying with one intention.</p>
+        <p class="lede">Start a session, choose how you want Anchor to check in, and keep focus visible without turning the work into another dashboard.</p>
+        <div class="text-links">
+          <a href="#flow">See the flow</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
-
-      <div class="product-preview" aria-label="Anchor focus session preview">
-        <div class="window-bar">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="preview-header">
-          <span>Companion</span>
-          <span>History</span>
-        </div>
-        <div class="eyes-row" aria-hidden="true">
-          <span class="mini-eye green"></span>
-          <span class="mini-eye red"></span>
-          <span class="mini-eye yellow"></span>
-          <span class="mini-eye blue"></span>
-        </div>
-        <div class="session-dial" aria-hidden="true">
-          <div class="dial-ring"></div>
-          <div class="main-eye">
-            <span class="sclera">
-              <span class="pupil"></span>
-            </span>
-          </div>
-          <span class="dial-handle"></span>
-          <span class="duration">45 min</span>
-        </div>
-        <div class="session-copy">
-          <p>The Monk</p>
-          <span>Steady local check-ins for focused work.</span>
-        </div>
-        <div class="preview-input">Finish the reading notes</div>
-        <div class="preview-button">Begin</div>
-      </div>
+      <figure class="hero-media">
+        <video src="assets/session-set-up-view.mov" poster="assets/app%20sreenshots/sessionsetup1.png" muted playsinline autoplay loop preload="metadata"></video>
+        <figcaption>Choose a proctor, set a duration, and optionally add the work you want Anchor to watch for.</figcaption>
+      </figure>
     </section>
 
-    <section class="band" id="features" aria-labelledby="features-title">
-      <div class="section-heading">
-        <p class="eyebrow">How it helps</p>
-        <h2 id="features-title">A quiet structure for deep work.</h2>
-      </div>
-      <div class="feature-grid">
-        <article>
-          <h3>Session goals</h3>
-          <p>Write what you intend to do, choose a duration, and keep the session anchored around that target.</p>
-        </article>
-        <article>
-          <h3>Local proctors</h3>
-          <p>Use on-device AI modes for screen-aware check-ins without sending your work to developer-operated servers.</p>
-        </article>
-        <article>
-          <h3>Gentle recovery</h3>
-          <p>When you drift, Anchor gives a short reminder so you can return without resetting the whole session.</p>
-        </article>
-      </div>
+    <section class="flow" id="flow" aria-label="Anchor feature flow">
+      <article class="flow-step">
+        <div class="flow-copy">
+          <span>01</span>
+          <h2>Pick your proctor.</h2>
+          <p>Choose the style of check-in you want. Some proctors can use an optional goal, while others can start immediately.</p>
+        </div>
+        <figure class="flow-media">
+          <img src="assets/app%20sreenshots/sesstionsetup2.png" alt="Anchor proctor selection screen.">
+        </figure>
+      </article>
+
+      <article class="flow-step reverse">
+        <div class="flow-copy">
+          <span>02</span>
+          <h2>Start when ready.</h2>
+          <p>Set the timer and begin. If the selected proctor needs a work target, add it before starting.</p>
+        </div>
+        <figure class="flow-media">
+          <img src="assets/app%20sreenshots/sessionsetup1.png" alt="Anchor session setup screen.">
+        </figure>
+      </article>
+
+      <article class="flow-step">
+        <div class="flow-copy">
+          <span>03</span>
+          <h2>Stay in the session.</h2>
+          <p>The main view stays small: timer, goal, and current state. Anchor checks context in the background and only speaks up when it matters.</p>
+        </div>
+        <figure class="flow-media">
+          <video src="assets/during-sessino-view.mov" poster="assets/app%20sreenshots/in-session-view.png" muted playsinline autoplay loop preload="metadata"></video>
+        </figure>
+      </article>
+
+      <article class="flow-step reverse notification-step">
+        <div class="flow-copy">
+          <span>04</span>
+          <h2>Recover quickly.</h2>
+          <p>When Anchor sees clear drift, it gives a short reminder instead of a long report.</p>
+        </div>
+        <figure class="flow-media notification-media">
+          <img src="assets/app%20sreenshots/notification.png" alt="Anchor reminder notification.">
+        </figure>
+      </article>
+
+      <article class="flow-step">
+        <div class="flow-copy">
+          <span>05</span>
+          <h2>Finish with a trace.</h2>
+          <p>Session results and history stay readable: enough context to learn from the block, not enough clutter to live there.</p>
+        </div>
+        <div class="media-stack">
+          <figure class="flow-media">
+            <img src="assets/app%20sreenshots/session-result.png" alt="Anchor session result screen.">
+          </figure>
+          <figure class="flow-media">
+            <img src="assets/app%20sreenshots/history.png" alt="Anchor session history screen.">
+          </figure>
+        </div>
+      </article>
     </section>
 
-    <section class="split-section" aria-labelledby="privacy-title">
+    <section class="companion-section" aria-labelledby="companion-title">
       <div>
-        <p class="eyebrow">Private by default</p>
-        <h2 id="privacy-title">Built around your Mac, not a dashboard.</h2>
+        <p class="eyebrow">Companion</p>
+        <h2 id="companion-title">Simple enough to leave open.</h2>
+        <p>Anchor is designed to feel like a small native companion: visible when useful, quiet the rest of the time.</p>
       </div>
-      <div class="plain-list">
-        <p>Anchor does not run analytics, ads, tracking, or telemetry services.</p>
-        <p>Local session settings, history, and downloaded model files stay on your device unless you choose to share them.</p>
-        <p>Optional third-party AI services are only used when you configure and use those features.</p>
+      <figure class="companion-media">
+        <img src="assets/app%20sreenshots/companion.png" alt="Anchor companion screen.">
+      </figure>
+    </section>
+
+    <section class="privacy-band" aria-labelledby="privacy-title">
+      <p class="eyebrow">Privacy</p>
+      <h2 id="privacy-title">Made for your Mac, not for surveillance.</h2>
+      <div class="privacy-copy">
+        <p>No analytics, ads, tracking, or telemetry services.</p>
+        <p>Local settings, history, and model files stay on your device unless you choose to share them.</p>
+        <p>Optional third-party AI services are used only when you configure and use those features.</p>
       </div>
     </section>
 
     <section class="closing">
       <img src="app-icon.png" alt="" width="56" height="56">
-      <h2>Keep your next session steady.</h2>
-      <p>Anchor is designed for students, makers, and anyone who wants focused time with less friction.</p>
+      <h2>Keep the next session simple.</h2>
+      <p>Anchor is for students, builders, and anyone who wants focused time with fewer rituals.</p>
+      <div class="text-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
     </section>
   </main>
 </body>
