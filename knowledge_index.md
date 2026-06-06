@@ -2,6 +2,12 @@
 
 ## Observations
 
+- 2026-06-05 corrected homepage pet-feature language: proctors are the entities that watch/check sessions, while pets are collectible rewards earned from sufficiently high session scores.
+    - importance: yellow
+    - review_state: informed
+- 2026-06-05 updated the public homepage for the new pet feature: hero copy now frames Anchor around proctor check-ins and earned pets, the landing hero uses `assets/session-set-up-view.mov` with `assets/newdesign/setup.png` as poster, the flow uses the new setup/during-session/notification/result/history screenshots, and the bottom Companion section shows the pet collection. Renamed new asset files to URL-safe names: `during-session.png`, `pet-collection.png`, and `result-pet-gone.png`.
+    - importance: green
+    - review_state: informed
 - 2026-06-05 GitHub Pages live check showed `/index.html`, `/styles.css`, and `/app-icon.png` all serving 200 with the correct MIME types. Added `?v=20260605` stylesheet cache-busting query to `index.html`, `privacy.html`, and `support.html` because browsers/CDN edges can temporarily show an unstyled page after seeing a stale or missing stylesheet during deploy.
     - importance: green
     - review_state: informed

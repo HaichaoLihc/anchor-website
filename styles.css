@@ -185,14 +185,17 @@ h1 {
 .hero-media video,
 .hero-media img,
 .flow-media video,
-.flow-media img {
+.flow-media img,
+.companion-media img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.hero-media video {
+.hero-media video,
+.hero-media img {
   max-height: min(66vh, 640px);
+  object-fit: contain;
 }
 
 figcaption {
@@ -266,6 +269,10 @@ figcaption {
 .notification-media {
   width: min(520px, 100%);
   justify-self: center;
+}
+
+.notification-media img {
+  border-radius: 8px;
 }
 
 .media-stack {
@@ -409,7 +416,8 @@ figcaption {
     max-width: 620px;
   }
 
-  .hero-media video {
+  .hero-media video,
+  .hero-media img {
     max-height: none;
   }
 
@@ -479,7 +487,8 @@ figcaption {
   .hero-media video,
   .hero-media img,
   .flow-media video,
-  .flow-media img {
+  .flow-media img,
+  .companion-media img {
     border-radius: 7px;
   }
 

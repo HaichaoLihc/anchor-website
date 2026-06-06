@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anchor</title>
-  <meta name="description" content="Anchor is a local-first AI focus companion for macOS.">
-  <link rel="stylesheet" href="styles.css?v=20260605-4">
+  <meta name="description" content="Anchor is a local-first AI focus companion for macOS with proctor check-ins, earned pets, nudges, and session history.">
+  <link rel="stylesheet" href="styles.css?v=20260605-pet">
 </head>
 <body>
   <header class="site-header">
@@ -25,16 +25,17 @@
       <div class="hero-copy">
         <p class="eyebrow">Local-first focus for macOS</p>
         <h1 id="hero-title">Anchor</h1>
-        <p class="headline">A quiet companion for staying with one intention.</p>
-        <p class="lede">Start a session, choose how you want Anchor to check in, and keep focus visible without turning the work into another dashboard.</p>
+        <p class="headline">Choose a proctor. Stay on task. Earn a pet.</p>
+        <p class="lede">Anchor pairs each focus block with a proctor that checks your session, sends a short nudge when you drift, and rewards strong scores with collectible pets.</p>
         <div class="text-links">
           <a href="#flow">See the flow</a>
+          <a href="#companion">Meet the pets</a>
           <a href="privacy.html">Privacy</a>
         </div>
       </div>
       <figure class="hero-media">
-        <video src="assets/session-set-up-view.mov" poster="assets/app%20sreenshots/sessionsetup1.png" muted playsinline autoplay loop preload="metadata"></video>
-        <figcaption>Choose a proctor, set a duration, and optionally add the work you want Anchor to watch for.</figcaption>
+        <video src="assets/session-set-up-view.mov" poster="assets/newdesign/setup.png" muted playsinline autoplay loop preload="metadata"></video>
+        <figcaption>Choose the proctor for the session, set the duration, and begin when the work has a clear shape.</figcaption>
       </figure>
     </section>
 
@@ -42,72 +43,67 @@
       <article class="flow-step">
         <div class="flow-copy">
           <span>01</span>
-          <h2>Pick your proctor.</h2>
-          <p>Choose the style of check-in you want. Some proctors can use an optional goal, while others can start immediately.</p>
+          <h2>Choose the proctor.</h2>
+          <p>Pick the check-in style for the session. The proctor watches for drift while you stay with the work.</p>
         </div>
         <figure class="flow-media">
-          <img src="assets/app%20sreenshots/sesstionsetup2.png" alt="Anchor proctor selection screen.">
+          <img src="assets/newdesign/setup.png" alt="Anchor setup screen with proctor selection and a Begin button.">
         </figure>
       </article>
 
       <article class="flow-step reverse">
         <div class="flow-copy">
           <span>02</span>
-          <h2>Start when ready.</h2>
-          <p>Set the timer and begin. If the selected proctor needs a work target, add it before starting.</p>
+          <h2>Stay with the work.</h2>
+          <p>The session view stays simple: timer, score, proctor state, and a short note about how the block is going.</p>
         </div>
         <figure class="flow-media">
-          <img src="assets/app%20sreenshots/sessionsetup1.png" alt="Anchor session setup screen.">
+          <img src="assets/newdesign/during-session.png" alt="Anchor active session screen with timer, score, and proctor state.">
         </figure>
       </article>
 
       <article class="flow-step">
         <div class="flow-copy">
           <span>03</span>
-          <h2>Stay in the session.</h2>
-          <p>The main view stays small: timer, goal, and current state. Anchor checks context in the background and only speaks up when it matters.</p>
+          <h2>Get nudged back.</h2>
+          <p>When Anchor sees clear drift, it sends a short reminder with the next concrete action.</p>
         </div>
-        <figure class="flow-media">
-          <video src="assets/during-sessino-view.mov" poster="assets/app%20sreenshots/in-session-view.png" muted playsinline autoplay loop preload="metadata"></video>
+        <figure class="flow-media notification-media">
+          <img src="assets/newdesign/notification.png" alt="Anchor notification asking the user to switch back to homework documents.">
         </figure>
       </article>
 
       <article class="flow-step reverse notification-step">
         <div class="flow-copy">
           <span>04</span>
-          <h2>Recover quickly.</h2>
-          <p>When Anchor sees clear drift, it gives a short reminder instead of a long report.</p>
+          <h2>See what happened.</h2>
+          <p>Results summarize the score and the outcome. A high enough score can unlock a new pet; a weaker block simply shows where the session drifted.</p>
         </div>
-        <figure class="flow-media notification-media">
-          <img src="assets/app%20sreenshots/notification.png" alt="Anchor reminder notification.">
+        <figure class="flow-media">
+          <img src="assets/newdesign/result-pet-gone.png" alt="Anchor completed session result showing score and pet reward status.">
         </figure>
       </article>
 
       <article class="flow-step">
         <div class="flow-copy">
           <span>05</span>
-          <h2>Finish with a trace.</h2>
-          <p>Session results and history stay readable: enough context to learn from the block, not enough clutter to live there.</p>
+          <h2>Keep a readable history.</h2>
+          <p>Session history keeps the score, selected proctor, drift line, and event trace together so the next block starts with useful context.</p>
         </div>
-        <div class="media-stack">
-          <figure class="flow-media">
-            <img src="assets/app%20sreenshots/session-result.png" alt="Anchor session result screen.">
-          </figure>
-          <figure class="flow-media">
-            <img src="assets/app%20sreenshots/history.png" alt="Anchor session history screen.">
-          </figure>
-        </div>
+        <figure class="flow-media">
+          <img src="assets/newdesign/history.png" alt="Anchor session history screen with scores, drift line, and session events.">
+        </figure>
       </article>
     </section>
 
-    <section class="companion-section" aria-labelledby="companion-title">
+    <section class="companion-section" id="companion" aria-labelledby="companion-title">
       <div>
-        <p class="eyebrow">Companion</p>
-        <h2 id="companion-title">Simple enough to leave open.</h2>
-        <p>Anchor is designed to feel like a small native companion: visible when useful, quiet the rest of the time.</p>
+        <p class="eyebrow">Pets</p>
+        <h2 id="companion-title">Build a collection from better focus sessions.</h2>
+        <p>Pets are rewards, not monitors. Score high enough in a session and Anchor can add a new companion to your collection.</p>
       </div>
       <figure class="companion-media">
-        <img src="assets/app%20sreenshots/companion.png" alt="Anchor companion screen.">
+        <img src="assets/newdesign/pet-collection.png" alt="Anchor pet collection with multiple unlocked collectible pets.">
       </figure>
     </section>
 
@@ -123,8 +119,8 @@
 
     <section class="closing">
       <img src="app-icon.png" alt="" width="56" height="56">
-      <h2>Keep the next session simple.</h2>
-      <p>Anchor is for students, builders, and anyone who wants focused time with fewer rituals.</p>
+      <h2>Make the next score count.</h2>
+      <p>Anchor is for students, builders, and anyone who wants focused time to feel visible without becoming another dashboard.</p>
       <div class="text-links">
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
