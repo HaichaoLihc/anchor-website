@@ -24,6 +24,9 @@
 - GitHub Pages is configured to publish from the `main` branch root. Expected public URLs are `https://haichaolihc.github.io/anchor-website/`, `/privacy.html`, and `/support.html`.
     - importance: yellow
     - review_state: informed
+- 2026-06-06 added `appcast.xml` here to host the Anchor macOS app's Sparkle auto-update feed at `https://haichaolihc.github.io/anchor-website/appcast.xml` (referenced by the app's `SUFeedURL`). It currently has zero `<item>` entries (valid "no update" state) plus a commented item template. New releases are appended (newest first) using `make_appcast_item.sh` in the app repo, which signs the GitHub-Release DMG with the EdDSA key.
+    - importance: yellow
+    - review_state: approved
 - `privacy.html` is the App Store Connect privacy policy URL. It states that Anchor does not collect personal data on developer-operated servers, while disclosing local app data and optional third-party AI service use.
     - importance: yellow
     - review_state: informed

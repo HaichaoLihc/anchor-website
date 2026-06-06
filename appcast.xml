@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Anchor</title>
+    <link>https://haichaolihc.github.io/anchor-website/appcast.xml</link>
+    <description>Software updates for Anchor, the native macOS focus proctor app.</description>
+    <language>en</language>
+
+    <item>
+      <title>1.1</title>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.1</sparkle:minimumSystemVersion>
+      <pubDate>Sat, 06 Jun 2026 21:56:38 +0000</pubDate>
+      <description><![CDATA[
+        <ul><li>Initial public release of Anchor.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/HaichaoLihc/anchor-website/releases/download/v1.1/Anchor-1.1.dmg"
+                 sparkle:edSignature="roa0V4MaHcpHB/3vb82VwesTWmcb9tbUuv36eXFyiIMrdEinrQeVrRiuT+R0Sf0QrXL02geDmPmXbBlCQNSVDw==" length="16160649"
+                 type="application/octet-stream" />
+    </item>
+
+    <!--
+      To publish a new release:
+        1. Build a notarized DMG and upload it as a GitHub Release asset.
+        2. Run scripts/make_appcast_item.sh (in the app repo) on the DMG to get a
+           signed <item> block, passing the GitHub Release download URL.
+        3. Paste the <item> here (newest first) and redeploy this site.
+
+      Template (the enclosure line is produced by the helper script):
+
+      <item>
+        <title>1.2</title>
+        <sparkle:version>2</sparkle:version>
+        <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.1</sparkle:minimumSystemVersion>
+        <pubDate>Wed, 10 Jun 2026 12:00:00 +0000</pubDate>
+        <description><![CDATA[
+          <ul><li>What changed in this release.</li></ul>
+        ]]></description>
+        <enclosure url="https://github.com/<owner>/<repo>/releases/download/v1.2/Anchor-1.2.dmg"
+                   sparkle:edSignature="..." length="..."
+                   type="application/octet-stream" />
+      </item>
+    -->
+  </channel>
+</rss>
