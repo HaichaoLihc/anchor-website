@@ -24,6 +24,12 @@
 - GitHub Pages is configured to publish from the `main` branch root. Expected public URLs are `https://haichaolihc.github.io/anchor-website/`, `/privacy.html`, and `/support.html`.
     - importance: yellow
     - review_state: informed
+- 2026-06-06 rewrote `index.html` around ANTI-BLOCKER positioning (hero "Delete your blockers. For good."). New section order: hero → problem ("Nobody's brain was built for the feed" + 3 cards) → blockers-vs-Anchor contrast (✕/✓ columns) → how-it-works flow (reframed, reuses existing screenshots) → "A score you'll want to beat" (scoring + foot-in-the-door psychology) → pets as real stakes → privacy → closing CTA. Added a "Download for Mac" pill linking to `https://github.com/HaichaoLihc/anchor-website/releases/latest` and "Requires macOS 14.1 on Apple silicon". New CSS classes: `.button`/`.cta-row`/`.cta-note`, `.section-head(.center)`, `.problem(-grid/-card)`, `.contrast(-grid/-col.is-anchor)`, `.score-band`, `.how-head`. Cache-bust bumped to `?v=20260606-blocker`.
+    - importance: yellow
+    - review_state: approved
+- The homepage privacy section was made HONEST about telemetry: it no longer claims "no analytics/telemetry" (false now that the app ships Sentry + Aptabase). It states the screen analysis runs on-device and screenshots are never uploaded, and that only anonymous aggregate usage + crash data is collected. `privacy.html` (the App Store policy) still says Anchor "does not collect personal data on developer-operated servers" and likely needs the same correction.
+    - importance: yellow
+    - review_state: approved
 - 2026-06-06 added `appcast.xml` here to host the Anchor macOS app's Sparkle auto-update feed at `https://haichaolihc.github.io/anchor-website/appcast.xml` (referenced by the app's `SUFeedURL`). It currently has zero `<item>` entries (valid "no update" state) plus a commented item template. New releases are appended (newest first) using `make_appcast_item.sh` in the app repo, which signs the GitHub-Release DMG with the EdDSA key.
     - importance: yellow
     - review_state: approved
