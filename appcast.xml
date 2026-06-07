@@ -8,6 +8,20 @@
     <description>Software updates for Anchor, the native macOS focus proctor app.</description>
     <language>en</language>
 
+      <item>
+        <title>1.1.1</title>
+        <sparkle:version>2</sparkle:version>
+        <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.1</sparkle:minimumSystemVersion>
+        <pubDate>Sun, 07 Jun 2026 00:05:37 +0000</pubDate>
+        <description><![CDATA[
+          Anchor 1.1.1
+        ]]></description>
+        <enclosure url="https://github.com/HaichaoLihc/anchor-website/releases/download/v1.1.1/Anchor-1.1.1.dmg"
+                   sparkle:edSignature="moBpkl/4UMzq+MVMEPfIa0CErUWO9Q7KZNDXHU6Xyi/SNIkW3U9mKJ/k2WI0lLf+G2ao89AAkkHy8xW3hRB0BQ==" length="16190856"
+                   type="application/octet-stream" />
+      </item>
+
     <item>
       <title>1.1</title>
       <sparkle:version>1</sparkle:version>
