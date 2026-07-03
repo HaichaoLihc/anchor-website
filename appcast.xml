@@ -9,6 +9,20 @@
     <language>en</language>
 
       <item>
+        <title>1.1.11</title>
+        <sparkle:version>12</sparkle:version>
+        <sparkle:shortVersionString>1.1.11</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.1</sparkle:minimumSystemVersion>
+        <pubDate>Fri, 03 Jul 2026 02:17:38 +0000</pubDate>
+        <description><![CDATA[
+          Anchor 1.1.11
+        ]]></description>
+        <enclosure url="https://github.com/HaichaoLihc/anchor-website/releases/download/v1.1.11/Anchor-1.1.11.dmg"
+                   sparkle:edSignature="jQSZPevwMBvk26mDKtHhXWdFtMBZZVo1n73LPS0LuFT/nOjdQMBfQiB/bq9xfiTk4nI5thyEKhQ4ceeTAMbUAg==" length="39040172"
+                   type="application/octet-stream" />
+      </item>
+
+      <item>
         <title>1.1.10</title>
         <sparkle:version>11</sparkle:version>
         <sparkle:shortVersionString>1.1.10</sparkle:shortVersionString>
